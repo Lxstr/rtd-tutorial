@@ -1,8 +1,8 @@
 """
-Lumache - Python library for cooks and food lovers.
+Flask-Session - Server-side sessions for Flask.
 """
 
-__version__ = "0.1.0"
+__version__ = "0.5.0"
 
 
 class InvalidKindError(Exception):
