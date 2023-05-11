@@ -70,17 +70,40 @@ how to manage the :ref:`configuration`.
 Documentation contents
 ######################
 
-.. toctree::
-   :maxdepth: 1
-
-   configuration/values
-   configuration/keys
+User's Guide
+------------
 
 .. toctree::
    :maxdepth: 2
 
+   configuration/values
+   configuration/keys
    usage
 
+
+API Reference
+-------------
+
+If you are looking for information on a specific function, class or
+method, this part of the documentation is for you.
+
+.. toctree::
+   :maxdepth: 2
+
+   api
+
+
+Additional Notes
+----------------
+
+.. toctree::
+   :maxdepth: 2
+
+   design
+   extensiondev
+   contributing
+   license
+   changes
 
 Indices and tables
 ##################
