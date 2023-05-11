@@ -12,6 +12,7 @@ Flask-Session, for example, you should use PERMANENT_SESSION_LIFETIME to control
 
 Configuration Values
 ************
+
 | Name | Description |
 |--|--|
 |`SESSION_COOKIE_NAME`          | the name of the session cookie         |

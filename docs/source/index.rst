@@ -32,7 +32,7 @@ then create the `Session` object by passing it the application.
    from flask_session import Session
 
    app = Flask(__name__)
-   # Check Configuration section for more details
+   # SESSION_TYPE is the only mandatory configuration value, check Configuration section for more details
    SESSION_TYPE = 'redis'
    app.config.from_object(__name__)
    Session(app)
@@ -49,7 +49,7 @@ then create the `Session` object by passing it the application.
 
 .. note::
 
-   The `Session` instance is not used for direct access, you should always use `flask.session`:
+   The `Session` instance is not used for direct access to the session, you should always use `flask.session` as shown above.
 
 Now all of your key/value pairs are stored on the server-side database of your choice (according to the SESSION_TYPE variable). The client-side user will now have a cookie that only provides a id that the server matches against the database each time a request is sent with that cookie.
 
@@ -60,17 +60,30 @@ If using the application factory pattern, you may also set up your application u
 
    sess = Session()
    sess.init_app(app)
+
 ..
 
 Check out the :doc:`usage` section for further information, including
 how to manage the :ref:`configuration`.
 
 
-Contents
---------
+Documentation contents
+######################
 
 .. toctree::
+   :maxdepth: 1
 
-   configuration
+   configuration/values
+   configuration/keys
+
+.. toctree::
+   :maxdepth: 2
+
    usage
-   api
+
+
+Indices and tables
+##################
+
+* :ref:`genindex`
+* :ref:`modindex`
