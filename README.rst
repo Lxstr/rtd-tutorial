@@ -5,7 +5,7 @@ A server-side implementation of the built-in cookie sessions for
 `Flask <https://flask.palletsprojects.com/>`__.
  
 Installation
-************
+-------------
 
 Install with the following command::
 
@@ -17,7 +17,7 @@ Install with the following command::
 
 
 Quick Start
-***********
+-------------
 
 Flask-Session is really easy to use.
 

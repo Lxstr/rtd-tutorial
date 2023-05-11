@@ -12,8 +12,7 @@ User's Guide
 .. toctree::
    :maxdepth: 2
 
-   configuration/values
-   configuration/keys
+   configuration
    usage
 
 
