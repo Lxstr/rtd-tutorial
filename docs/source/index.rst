@@ -1,4 +1,4 @@
-Firebase REST API |release|
+Flask-Session |release|
 ###########################
 
 A server-side implementation of the built-in cookie sessions for 
@@ -8,7 +8,7 @@ A server-side implementation of the built-in cookie sessions for
 Installation
 ************
 
-Install the extension with the following command::
+Install with the following command::
 
 .. code-block:: python
 
@@ -27,6 +27,7 @@ then create the `Session` object by passing it the application.
 
 
 .. code-block:: python
+
    from flask import Flask, session
    from flask_session import Session
 
@@ -56,12 +57,13 @@ Now all of your key/value pairs are stored on the server-side database of your c
 If using the application factory pattern, you may also set up your application using ``Session.init_app`` method:
 
 .. code-block:: python
-sess = Session()
-sess.init_app(app)
+
+   sess = Session()
+   sess.init_app(app)
 ..
 
 Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+how to manage the :ref:`configuration`.
 
 
 Contents
